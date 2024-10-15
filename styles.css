@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: url('logo.jpg'); /* Ensure the path is correct */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    animation: fadeIn 1s ease-in;
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Arrange children vertically */
+    align-items: center; /* Center children horizontally */
+}
+
+h1 {
+    margin-bottom: 20px;
+    opacity: 0; /* Start invisible for fade-in effect */
+    animation: fadeInUp 0.5s forwards, colorChange 10s infinite; /* Animation for heading */
+    text-align: center; /* Center text */
+    margin-top: 0; /* Remove default margin at the top */
+}
+
+h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    opacity: 0; /* Start invisible for fade-in effect */
+    animation: fadeInUp 0.5s forwards; /* Animation for heading */
+    animation-delay: 0.4s; /* Delay for subheadings */
+}
+
+.instruction, .options {
+    opacity: 0; /* Start invisible for fade-in effect */
+    animation: fadeInUp 0.5s forwards; /* Animation for sections */
+}
+
+.instruction {
+    animation-delay: 0.6s; /* Delay for instructions */
+}
+
+.options {
+    animation-delay: 0.8s; /* Delay for options */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgba(255, 0, 0, 0.8); /* Semi-transparent red */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    opacity: 10; 
+    animation: fadeIn 1s forwards; 
+    animation-delay: 1s; 
+}
+
+button:hover {
+    background-color: rgba(200, 0, 0, 0.8); 
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes colorChange {
+    0% { color: rgb(82, 0, 0); }
+    10% { color: rgb(185, 2, 2); }
+    20% { color: rgb(255, 0, 0); }
+    30% { color: #ff3131; }
+    40% { color: #ff9047; }
+    50% { color: #fffb00; }
+    60% { color: #9dff00; }
+    70% { color: #88ff00; }
+    80% { color: #00ff15; }
+    90% { color: #00ff0d; }
+    100% { color: #00ff88; }
+    110% { color: #00ffb3; }
+    120% { color: #00b7ff; }
+    140% { color: #003cff; }
+    160% { color: #0400ff; }
+    180% { color: #080672; }
+    200% { color: #160075; }
+}
+
+.options a {
+    animation: slideIn 0.9s forwards;
+    opacity: 0; 
+}
+
+.options a:nth-child(1) { animation-delay: 0.9s; }
+.options a:nth-child(2) { animation-delay: 0.8s; }
+.options a:nth-child(3) { animation-delay: 1s; }
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+}

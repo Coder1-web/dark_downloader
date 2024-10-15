@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-image: url('logo.png'); /* Adjust the path as needed */
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: rgba(30, 136, 229, 0.8);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgba(21, 101, 192, 0.8);
+        }
+    </style>
+    <script>
+        function redirectToPage(page) {
+            window.location.href = page;
+        }
+
+        function redirectToLogin() {
+            window.location.href = 'login.html'; // Redirect to login page
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Personal Information</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:e.m.goutham30@gmail.com">e.m.goutham30@gmail.com</a></p>
+            <p>Follow me on:</p>
+            <ul>
+                <li><a href="https://www.youtube.com/@Gamers__box_yt" target="_blank">YouTube</a></li>
+                <li><a href="https://www.instagram.com/gamers_box_yt?igsh=MTJqNmRreGVzejA0YQ==" target="_blank">Instagram</a></li>
+            </ul>
+            <p>This page is for educational purposes only. Please use it for educational purposes only; this does not contain any legal promotion. It is at your own risk to go further into this website, and the links above are the founder's Gmail ID and their personal YouTube channel and Instagram ID. You can contact us on any of these platforms. This website is created by Goutham, 13 years old, on 8/21/2024, Wednesday, at 8:29 PM.</p>
+        </section>        
+        <button onclick="location.href='index.html'">Back to Home</button>
+    </main>
+    <footer>
+        <p>&copy; 2024 Dark Download. All rights reserved.</p>
+    </footer>
+</body>
+</html>
